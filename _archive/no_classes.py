@@ -30,7 +30,7 @@ def laser_timer(can_shoot: bool, duration: int = 500) -> bool:
 
         if current_time - shoot_time >= duration:
             can_shoot = True
-    
+
     return can_shoot
 
 
@@ -42,6 +42,7 @@ def meteor_update(meteor_list: list = None, speed: int = 300) -> None:
         meteor_rectangle.center += direction * speed * dt
         if meteor_rectangle.top > WINDOW_HEIGHT:
             meteor_list.remove(meteor_tuple)
+
 
 # Game init
 pg.init()
@@ -96,7 +97,7 @@ while True:
 
             # play laser sound
             laser_sound.play()
-        
+
         if event.type == meteor_timer:
             x_pos = randint(-100, WINDOW_WIDTH + 100)
             y_pos = randint(-100, -50)
@@ -131,19 +132,19 @@ while True:
 
     pg.time.get_ticks()  # milliseconds since pygame.init()
 
-    #2. update game state
+    # 2. update game state
     display_surface.fill((0, 0, 0))
     display_surface.blit(background_surface, (0, 0))
-    
+
     display_score()
-    
+
     for rect in laser_list:
         display_surface.blit(laser_surface, rect)
-    
+
     for meyeor_tuple in meteor_list:
         display_surface.blit(meteor_surface, meyeor_tuple[0])
 
     display_surface.blit(ship_surface, ship_rectangle)
 
-    #3. update display surface / show frame to player
+    # 3. update display surface / show frame to player
     pg.display.update()

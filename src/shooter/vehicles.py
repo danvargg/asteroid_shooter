@@ -3,6 +3,7 @@ import pygame as pg
 
 WINDOW_WIDTH, WINDOW_HEIGHT = 1280, 720
 
+
 class Ship(pg.sprite.Sprite):
     """Base class for all ships."""
 
@@ -12,6 +13,7 @@ class Ship(pg.sprite.Sprite):
 
         self.image = pg.image.load('src/graphics/ship.png').convert_alpha()
         self.rect = self.image.get_rect(center=(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2))
+
 
 class ShipLaser(pg.sprite.Sprite):
     """Base class for all ship lasers."""
