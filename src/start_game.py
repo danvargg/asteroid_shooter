@@ -28,6 +28,9 @@ while True:
     # Background
     DISPLAY_SURFACE.blit(BACKGROUND_SURFACE, (0, 0))
 
+    # Update
+    spaceship_group.update()
+
     # Graphics
     spaceship_group.draw(DISPLAY_SURFACE)
     laser_group.draw(DISPLAY_SURFACE)
