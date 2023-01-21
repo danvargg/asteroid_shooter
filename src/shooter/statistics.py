@@ -4,7 +4,7 @@ import pygame as pg
 from shooter import WINDOW_WIDTH, WINDOW_HEIGHT, DISPLAY_SURFACE
 
 
-class Score:  # TODO: change screen icon
+class Score:
     """Score class."""
 
     def __init__(self):

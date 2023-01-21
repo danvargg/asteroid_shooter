@@ -15,6 +15,3 @@ cx_Freeze.setup(
     options={"build_exe": {"packages": ["pygame"], "include_files": ["src/graphics.png", "src/fonts.jpg"]}},
     executables=executables
 )
-
-# TODO: update reqs.txt: pygame, cs_Freeze only?
-# python install_game.py build

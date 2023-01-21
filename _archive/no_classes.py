@@ -119,7 +119,7 @@ while True:
         meteor_rectangle = meteor_tuple[0]
         if meteor_rectangle.colliderect(ship_rectangle):
             pg.quit()
-            sys.exit()  # TODO: print game over and score
+            sys.exit()
 
     # Laser and meteor collisions
     for laser_rect in laser_list:

@@ -21,6 +21,10 @@ pg.time.set_timer(asteroid_timer, millis=400)
 
 score = Score()
 
+# Game music
+game_music = pg.mixer.Sound('src/sounds/music.wav')
+game_music.play(loops=-1)
+
 # Game loop
 while True:
     # event loop
@@ -41,8 +45,8 @@ while True:
     DISPLAY_SURFACE.blit(BACKGROUND_SURFACE, (0, 0))
 
     # Update
-    spaceship_group.update(laser_group=laser_group)
-    laser_group.update(dt=dt)
+    spaceship_group.update(laser_group=laser_group, asteroid_group=asteroid_group)
+    laser_group.update(dt=dt, asteroid_group=asteroid_group)
     asteroid_group.update(dt=dt)
     score.display()
 
