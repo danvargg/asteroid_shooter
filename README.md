@@ -17,5 +17,5 @@ Asteroid shooter game built in `Python` and `Pygame`.
 
 ### Screenshots
 
-<img src="https://github.com/danvargg/asteroid_shooter/blob/main/images/a_shooter.png">
+<img src="https://github.com/danvargg/asteroid_shooter/blob/main/images/asteroid_01.png">
 
