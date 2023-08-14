@@ -1,16 +1,21 @@
-# asteroid_shooter
+## Asteroid Shooter
 
-Asteroid shooter game
+Asteroid shooter game built in `Python` and `Pygame`.
 
-## TODO
+### How to start the game
 
-- Print game over and score
-- After game over, retry or exit
-- Asteroid rotation to both sides
-- Change screen icon
-- Complete all docs
-- Complete typings
-- Add unit tests
-- Score by asteroid destroyed and time
-- README: description, install instructions, how to play, how to contribute
-- Add (maybe) explosion on each collision
+- Clone the repository
+- Install the dependencies with `pip install -r requirements.txt`
+- Run the game with `python src/start_game.py`
+- Enjoy!
+
+### How to play
+
+- Use mouse to move the ship
+- Press left mouse button to shoot
+- Close the game window to exit
+
+### Screenshots
+
+<img src="https://github.com/danvargg/asteroid_shooter/blob/main/images/a_shooter.png">
+

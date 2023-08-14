@@ -12,6 +12,7 @@ executables = [cx_Freeze.Executable("src/start_game.py", base=base)]
 
 cx_Freeze.setup(
     name="Asteroid Shooter",
-    options={"build_exe": {"packages": ["pygame"], "include_files": ["src/graphics.png", "src/fonts.jpg"]}},
+    version="1.0",
+    options={"build_exe": {"packages": ["pygame"], "include_files": ["src/graphics", "src/fonts", "src/sounds", "src/shooter"]}},
     executables=executables
 )

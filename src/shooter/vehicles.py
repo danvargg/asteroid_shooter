@@ -1,4 +1,6 @@
 """Base classes for space vehicles."""
+import sys
+
 import pygame as pg
 
 from shooter import WINDOW_WIDTH, WINDOW_HEIGHT
